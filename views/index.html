@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Create a Blog Post</h1>
+  <form id="postForm" onsubmit="submitPost(event)">
+    <input type="text" id="title" placeholder="Title" required><br>
+    <input type="text" id="author" placeholder="Author Name" required><br>
+    <textarea id="description" placeholder="Description" required></textarea><br>
+    <button type="submit">Submit Post</button>
+  </form>
+
+  <h1>Blog Posts</h1>
+  <div id="postsContainer"></div>
+</body>
+</html>
